@@ -1,0 +1,42 @@
+{% extends "page_maitre.html" %}
+
+{% block titre %}
+Création
+{% endblock %}
+
+{% block contenu %}
+<section>
+    <div>
+        <div>
+            <h2>Création de personnage</h2>
+            <p></p>
+            <form  method="post" action="https://philippefleury.com/backend.php">
+                <label for="choixchat">Sélectionner un chat</label>
+                <select name="choixchat" id="choixchat" required>
+                    <option value="">&nbsp;</option>
+                    <optgroup label="Région de Montréal">
+                        <option value="chamallow">Chamallow</option>
+                        <option value="chapardeur">Chapardeur</option>
+                        <option value="chapristi">Chapristi</option>
+                        <option value="chalumeau">Chalumeau</option>
+                    </optgroup>
+                    <optgroup label="Région de Québec">
+                        <option value="chatouille">Chatouille</option>
+                        <option value="charlotte">Charlotte</option>
+                        <option value="charivari">Charivari</option>
+                    </optgroup>
+                </select>
+                <label for="description">Description :</label>
+                <textarea id="description" name="description"></textarea>
+                <label for="periode">Période souhaitée</label>
+                <input type="text" name="periode" id="periode" required="required">
+                <label for="email">Adresse courriel</label>
+                <input type="email" name="email" id="email" required="required" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$">
+                <button type="submit">Créer</button> <button type="reset">Réinitialiser</button> <button type="button">Aléatoire</button>
+            </form>
+        </div>
+
+    </div>
+</section>
+</main>
+{% endblock %}

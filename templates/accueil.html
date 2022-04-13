@@ -1,0 +1,38 @@
+{% extends "page_maitre.html" %}
+
+{% block titre %}
+Accueil
+{% endblock %}
+
+{% block contenu %}
+<section>
+    <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="../static/img/3.jpg" class="d-block w-100" alt="">
+          </div>
+          <div class="carousel-item">
+            <img src="../static/img/5.jpg" class="d-block w-100" alt="">
+          </div>
+          <div class="carousel-item">
+            <img src="../static/img/4.jpg" class="d-block w-100" alt="">
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div> 
+      <div>
+        <p>Cup, ristretto, robusta aged kopi-luwak grounds cultivar café au lait. Extraction blue mountain brewed coffee, medium, to go, est french press viennese spoon est grounds. And crema variety, spoon variety cappuccino redeye dripper galão. Saucer, skinny, spoon foam siphon half and half extra  single origin.
+            <br /><br />
+            Fair trade grinder redeye shop spoon sugar cream instant shop extraction café au lait dark. Skinny bar , grounds affogato aftertaste caramelization ristretto. Qui fair trade, brewed, frappuccino instant, dripper sweet java instant trifecta sweet aftertaste. Chicory id cortado siphon ut rich kopi-luwak.</p>
+    </div>
+</section>
+</main>
+
+{% endblock %}
