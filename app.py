@@ -17,7 +17,7 @@ def accueil():
 def creation():
     return render_template("creation.html")
 
-@app.route("/personnages_crees")
+@app.route("personnages_crees")
 def personnages_crees():
     return render_template("personnages_crees.html")
 

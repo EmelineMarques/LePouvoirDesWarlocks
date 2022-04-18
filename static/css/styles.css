@@ -11137,7 +11137,7 @@ body {
 h1, .h1 {
   font-family: Warlock;
   color: #81bf28;
-  font-size: 10rem;
+  font-size: 9vw;
   text-align: center;
   line-height: 10rem;
   letter-spacing: 0.1em;
@@ -11148,18 +11148,26 @@ h1, .h1 {
 h1::before, .h1::before {
   content: url("../img/sorciere-ban.png");
   position: absolute;
+  top: -70px;
   left: -310px;
+  z-index: 3;
 }
 
+@media (max-width: 1024px) {
+  h1::before, .h1::before {
+    display: none;
+  }
+}
 h1 span, .h1 span {
   font-family: "Raleway", sans-serif;
   color: #adb5bd;
   text-transform: uppercase;
-  font-size: 1.5rem;
+  font-size: 1.7vw;
   letter-spacing: 0.35em;
   font-weight: 700;
-  line-height: 3rem;
+  line-height: 5rem;
   text-shadow: 4px 4px 5px #000;
+  display: block;
 }
 
 h2, .h2 {
@@ -11229,6 +11237,10 @@ main nav {
   height: 100%;
 }
 
+main nav ul {
+  width: 90%;
+}
+
 main nav a {
   font-family: "Raleway", sans-serif;
   text-transform: uppercase;
@@ -11256,6 +11268,31 @@ main nav a i {
   color: #81bf28;
 }
 
+main nav a:hover .icon-nav {
+  animation: wobble 1s ease;
+}
+
+@keyframes wobble {
+  0%, 100% {
+    transform: translateX(0%);
+    transform-origin: 50% 50%;
+  }
+  15% {
+    transform: translateX(-15px) rotate(-6deg);
+  }
+  30% {
+    transform: translateX(7.5px) rotate(6deg);
+  }
+  45% {
+    transform: translateX(-7.5px) rotate(-3.6deg);
+  }
+  60% {
+    transform: translateX(4.5px) rotate(2.4deg);
+  }
+  75% {
+    transform: translateX(-3px) rotate(-1.2deg);
+  }
+}
 .container-description {
   margin: 5em 0;
   border-radius: 10px 0 0 10px;
@@ -11276,12 +11313,6 @@ main nav a i {
   left: 45px;
 }
 
-.carousel-inner > .item > img,
-.carousel-inner > .item > a > img {
-  width: 100%;
-  margin: auto;
-}
-
 footer {
   background-image: url("../img/banniere.png");
   background-size: cover;
@@ -11293,10 +11324,34 @@ footer {
   font-weight: 700;
 }
 
-footer figcaption {
-  color: #81bf28;
+footer figure figcaption {
+  color: #81bf28 !important;
   font-size: 0.7em;
   text-align: center;
+}
+
+.modal a:hover {
+  text-decoration: underline;
+}
+
+.card-container {
+  width: 385px;
+  height: 285px;
+}
+
+.uni-container {
+  max-width: 75%;
+  min-width: 75%;
+  padding: 3rem;
+  margin: 5em auto;
+  background-color: rgba(255, 255, 255, 0.75);
+  border-radius: 10px;
+}
+
+.uni-container h2, .uni-container .h2 {
+  position: relative;
+  text-align: center;
+  margin: 0.5em 0;
 }
 
 /*# sourceMappingURL=styles.css.map */
