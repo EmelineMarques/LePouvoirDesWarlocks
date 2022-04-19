@@ -1,24 +1,11 @@
 {
-  "dependencies": {
-    "bootstrap": "^5.1.3",
-    "bootstrap-icons": "^1.8.1",
-    "sass": "^1.49.11"
-  },
-  "name": "tp2",
+  "name": "integration-tp1",
   "version": "1.0.0",
+  "description": "",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/Ravencypher/integration-tp2.git"
-  },
   "author": "",
-  "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/Ravencypher/integration-tp2/issues"
-  },
-  "homepage": "https://github.com/Ravencypher/integration-tp2#readme",
-  "description": ""
+  "license": "ISC"
 }
