@@ -17,47 +17,47 @@
 </head>
 
 <body>
-  <div class="modal fade" id="fenetreLien" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal fade" id="fenetreLien" tabindex="-1" aria-labelledby="modal recherche" aria-hidden="true">
     <div class="modal-dialog modal-dialog-centered">
       <div class="modal-content">
         <div class="modal-header">
-          <h5 class="modal-title" id="exampleModalLabel">Résultat de recherche</h5>
+          <h5 class="modal-title" id="modal recherche">Résultat de recherche</h5>
           <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Fermer"></button>
         </div>
         <div class="modal-body">
           <ul class="nav flex-column">
             <li class="nav-item">
-              <a class="nav-link link-primary fw-bold" aria-current="page" href="https://www.dndbeyond.com/classes/warlock#TheUndead">Le Mort-Vivant</a>
+              <a class="nav-link link-primary fw-bold" aria-label="Le Mort-Vivant" aria-current="Le Mort-Vivant" href="https://www.dndbeyond.com/classes/warlock#TheUndead">Le Mort-Vivant</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link link-primary fw-bold" href="https://www.dndbeyond.com/classes/warlock#TheFathomless">L'Insondable</a>
+              <a class="nav-link link-primary fw-bold" aria-label="Le Mort-Vivant" aria-current="L'Insondable" href="https://www.dndbeyond.com/classes/warlock#TheFathomless">L'Insondable</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link link-primary fw-bold" href="https://www.dndbeyond.com/classes/warlock#TheHexblade">La lame Maudite</a>
+              <a class="nav-link link-primary fw-bold" aria-label="Le Mort-Vivant" aria-current="La Lame Maudite" href="https://www.dndbeyond.com/classes/warlock#TheHexblade">La Lame Maudite</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link link-primary fw-bold" href="https://www.dndbeyond.com/classes/warlock#TheGenie">Le Génie</a>
+              <a class="nav-link link-primary fw-bold" aria-label="Le Mort-Vivant" aria-current="Le Génie" href="https://www.dndbeyond.com/classes/warlock#TheGenie">Le Génie</a>
             </li>
           </ul>
         </div>
         <div class="modal-footer">
-          <button type="button" class="btn btn-primary" data-bs-dismiss="modal">Fermer</button>
+          <button type="button" class="btn btn-primary" data-bs-dismiss="modal" aria-label="Fermer">Fermer</button>
         </div>
       </div>
     </div>
   </div>
   <nav class="navbar navbar-expand-lg navbar-dark">
     <div class="container-fluid">
-      <button class="navbar-toggler bg-success" type="button" data-bs-toggle="collapse"
-        data-bs-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false"
+      <button class="navbar-toggler bg-success" type="button" data-bs-toggle="fermer"
+        data-bs-target="#navigationToggle" aria-controls="navigationToggle" aria-expanded="false"
         aria-label="Bouton de menu">
         <span class="navbar-toggler-icon"></span>
       </button>
-      <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+      <div class="collapse navbar-collapse" id="navigationToggle">
         <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
-          <li class="nav-item"><a class="nav-link link-success" href="#"><i class="bi bi-share-fill"></i> Partager</a>
+          <li class="nav-item"><a class="nav-link link-success" href="#" aria-label="Partager"><i class="bi bi-share-fill"></i> Partager</a>
           </li>
-          <li class="nav-item"><a class="nav-link link-success" href="#"><i class="bi bi-person-circle"></i>
+          <li class="nav-item"><a class="nav-link link-success" href="#" aria-label="Connexion"><i class="bi bi-person-circle"></i>
               Connexion</a></li>
         </ul>
         <form class="d-flex align-items-center">
@@ -81,16 +81,16 @@
         <div class="col-lg-2 px-0">
           <nav class="d-flex justify-content-start pt-3">
             <ul class="nav flex-column align-items-end">
-              <li><a class="nav-link m-2" href="/accueil">Accueil <i
+              <li><a class="nav-link m-2" href="/accueil" aria-label="Accueil">Accueil <i
                     class="bi bi-house-fill d-flex justify-content-center align-items-center icon-nav rounded-circle"></i></a>
               </li>
-              <li><a class="nav-link m-2" href="/creationbase">Création <i
+              <li><a class="nav-link m-2" href="/creationbase" aria-label="Creation">Création <i
                     class="bi bi-lightning-charge-fill d-flex justify-content-center align-items-center icon-nav rounded-circle"></i></a>
               </li>
-              <li><a class="nav-link m-2" href="/personnages_crees">Personnages Crées <i
+              <li><a class="nav-link m-2" href="/personnages_crees" aria-label="Personnages Crees">Personnages Crées <i
                     class="bi bi-hexagon d-flex justify-content-center align-items-center icon-nav rounded-circle"></i></a>
               </li>
-              <li><a class="nav-link m-2" href="/personnages_par_defaut">Personnages par défaut <i
+              <li><a class="nav-link m-2" href="/personnages_par_defaut" aria-label="Personnages par defaut">Personnages par défaut <i
                     class="bi bi-journals d-flex justify-content-center align-items-center icon-nav rounded-circle"></i></a>
               </li>
             </ul>
@@ -99,14 +99,14 @@
         <div class="col-lg-10 px-0">
           <div class="row mx-0">
             <div class="col-xl-6 px-0 d-flex justify-content-center align-items-center">
-              <div id="carouselExampleIndicators" class="carousel slide w-75" data-bs-ride="carousel">
+              <div id="carousselAccueil" class="carousel slide w-75" data-bs-ride="carousel">
                 <div class="carousel-indicators">
-                  <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active"
-                    aria-current="true" aria-label="Slide 1"></button>
-                  <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
-                    aria-label="Slide 2"></button>
-                  <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
-                    aria-label="Slide 3"></button>
+                  <button type="button" data-bs-target="#carousselAccueil" data-bs-slide-to="0" class="active"
+                    aria-current="true" aria-label="Image 1"></button>
+                  <button type="button" data-bs-target="#carousselAccueil" data-bs-slide-to="1"
+                    aria-label="Image 2"></button>
+                  <button type="button" data-bs-target="#carousselAccueil" data-bs-slide-to="2"
+                    aria-label="Image 3"></button>
                 </div>
                 <div class="carousel-inner">
                   <div class="carousel-item active">
@@ -122,11 +122,11 @@
                       alt="Partie d'échec">
                   </div>
                 </div>
-                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
+                <button class="carousel-control-prev" type="button" data-bs-target="#indicateursCarroussel"
                   data-bs-slide="prev">
                   <span class="carousel-control-prev-icon" aria-hidden="true"></span>
                 </button>
-                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"
+                <button class="carousel-control-next" type="button" data-bs-target="#indicateursCarroussel"
                   data-bs-slide="next">
                   <span class="carousel-control-next-icon" aria-hidden="true"></span>
                 </button>
@@ -187,23 +187,23 @@
   <footer class="pt-3 d-flex justify-content-center align-items-center">
     <div class="container-fluid">
       <div class="row">
-        <div class="col-lg-4 d-flex justify-content-center p-2"><a class="link-secondary disabled">Contactez-nous</a>
+        <div class="col-lg-4 d-flex justify-content-center p-2"><a class="link-secondary disabled" aria-label="Contact">Contactez-nous</a>
         </div>
         <div class="col-lg-4 d-flex justify-content-center p-2"><a href="mailto:adresse.test@gmail.com"
-            class="link-secondary">© Donjons et Dragons 2022 </a></div>
-        <div class="col-lg-4 d-flex justify-content-center p-2"><a class="link-secondary disabled">Conditions
+            class="link-secondary" aria-label="Courriel">© Donjons et Dragons 2022 </a></div>
+        <div class="col-lg-4 d-flex justify-content-center p-2"><a class="link-secondary disabled" aria-label="Conditions Utilisation">Conditions
             d'utilisation</a></div>
       </div>
       <div class="row">
         <div class="col-12 d-flex justify-content-center align-items-center">
           <figure class="text-center">
-            <blockquote class="blockquote">
+            <blockquote class="blockquote" aria-label="Citation">
               <p>Vous me pensez fou ? Je pense que la folie est de se contenter de vivre une vie de corvée
                 mortelle <br>
                 quand la connaissance et le pouvoir sont là pour être pris dans le royaume de l'au-delà
             </p>
             </blockquote>
-            <figcaption class="blockquote-footer">Xarren, <cite title="Source Title">Héraut d'Acamar</cite>
+            <figcaption class="blockquote-footer">Xarren, <cite title="Source" aria-label="Source">Héraut d'Acamar</cite>
             </figcaption>
           </figure>
         </div>
