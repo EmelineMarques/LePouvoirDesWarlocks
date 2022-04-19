@@ -203,7 +203,8 @@ footer figure figcaption{
 }
 .card-container{
     width:385px;
-    height:285px;
+    min-height:285px;
+    max-height:300px;
 }
 .uni-container{
     max-width:75%;
@@ -217,4 +218,25 @@ footer figure figcaption{
     position:relative;
     text-align:center;
     margin:0.5em 0;
+}
+.card{
+    animation-name:appear;
+    animation-duration:2s;
+    animation-delay:500ms;
+    animation-iteration-count:1;
+    animation-timing-function:linear;
+}
+@keyframes appear {
+    0% { 
+        opacity:0;
+        transform:scale(0);
+     }
+    66% { 
+        opacity:0; 
+        transform:scale(0);
+    }
+    100% { 
+        opacity:1;
+        transform:scale(1); 
+    }
 }
